@@ -39,23 +39,23 @@ body {
 }
 
 a.primaryCTA {
-  background: #F7882F;
+  background: #F7C331;
   transition: background 0.5s ease;
   padding: 10px 36px;
-  border: 1px solid #F7882F;
+  border: 1px solid #F7C331;
   text-decoration: none;
   color: #fff;
   margin: 0 2px;
   text-transform: uppercase;
 }
 a.primaryCTA:hover {
-  background: rgba(247,136,47,.8);
+  background: rgba(247,195,49,.8);
 }
 
 a.secondaryCTA {
-  background: rgba(247,136,47,.1);
+  background: rgba(247,195,49,.1);
   transition: background 0.5s ease;
-  border: 1px solid #F7882F;
+  border: 1px solid #F7C331;
   padding: 10px 36px;
   text-decoration: none;
   color: #ffffff;
@@ -63,14 +63,14 @@ a.secondaryCTA {
   text-transform: uppercase;
 }
 a.secondaryCTA:hover {
-  background: rgba(247,136,47,.5);
+  background: rgba(247,195,49,.5);
 }
 
 .mainNav {
   width: 100%;
   display: flex;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 999;
 }
@@ -83,9 +83,11 @@ a.secondaryCTA:hover {
   margin: 2em;
 }
 .mainNav ul.menu {
-  display: block;
-  margin-right: 3em;
-  float: right;
+      display: block;
+    width: 100%;
+    margin-right: 3em;
+    float: right;
+    text-align: right;
 }
 .mainNav ul.menu li {
   display: inline-block;
@@ -152,7 +154,7 @@ a.secondaryCTA:hover {
 
 .imageContainer_4to3 {
   width: 101%;
-  height: 20em;
+  height: 20vw;
   display: block;
   position: relative;
   overflow: hidden;
@@ -176,13 +178,12 @@ a.secondaryCTA:hover {
     top:0%;
     left:50%;
     margin-left: -50%;
-    width: 110%;
-    height: auto;
+    width: 100%;
 }
 
 .galleryimg--overlay {
     background: rgba(0,0,0,.3);
-    height: 100%;
+    height: inherit;
     width: 100%;
     top: 0;
     left: 0;
@@ -214,31 +215,53 @@ a.secondaryCTA:hover {
 }
 
 .blogPosts .ctaBar a {
-  background: #00B9B9;
-  height: 50px;
-  margin-top: 5%;
+  background: #6B7A8F;
+  height: 40px;
+  margin: 0;
   width: 100vw;
   display: block;
-  padding: 20px 0 10px 0;
+  padding: 30px 0 10px 0;
   text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .destinationMap {
-  background: url(http://placehold.it/900x200) no-repeat center center;
+  background: url(../img/placeimg_640_480_globe.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   display: block;
   margin-top: 0;
+  position: relative;
 }
+
 .destinationMap .blurb {
   display: inline-block;
-  width: 12em;
-  margin: 20% 0 10% 15%;
+  width: 20%;
+  margin: 3% 0 3% 50%;
   padding: 5%;
   text-align: center;
-  background: #ffffff;
+}
+
+.destinationMap .blurb h6 {
+  margin: 0 0 1em 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+
+}
+
+.destinationMap .blurb ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 2em 0;
+}
+
+.destinationMap .blurb ul li {
+  margin-left: 0;
 }
 
 .bio {
