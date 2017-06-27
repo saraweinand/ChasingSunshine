@@ -1,0 +1,197 @@
+/* 
+COLOR PALETTE
+---------------------
+blueberry #6B7A8F
+Apricot   #F7882F
+Citrus    #F7C331
+AppleCore #DCC7AA
+
+
+FONT STYLES
+---------------------
+
+
+BUTTON / LINKS
+---------------------
+primary   .primaryCTA
+secondary .secondaryCTA
+inline .inlineLink
+*/
+
+/*
+CSS FILE BREAKDOWN
+  cmd + f titles to find sections 
+
+1: TYPOGRAPHY AND BUTTONS
+2: LANDING PAGE / HERO
+3: FEATURED BLOG POSTS
+4: ABOUT / CUSTOM SECTION - 1
+5: CONTACT / CUSTOM SECTION - 2
+6: OPTIONAL CUSTOM SECTION - 3
+7: HEADER / NAV / FOOTER
+
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:300i,400,800");
+body {
+  width: 100vw;
+  font-family: 'Raleway', sans-serif;
+}
+
+a.primaryCTA {
+  background: #F7882F;
+  transition: background 0.5s ease;
+  padding: 10px 36px;
+  border: 1px solid #F7882F;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 2px;
+  text-transform: uppercase;
+}
+a.primaryCTA:hover {
+  background: rgba(247,136,47,.8);
+}
+
+a.secondaryCTA {
+  background: rgba(247,136,47,.1);
+  transition: background 0.5s ease;
+  border: 1px solid #F7882F;
+  padding: 10px 36px;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 2px;
+  text-transform: uppercase;
+}
+a.secondaryCTA:hover {
+  background: rgba(247,136,47,.5);
+}
+
+.mainNav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.mainNav .logo {
+  display: block;
+  width: 20%;
+  max-width: 250px;
+  float: left;
+  margin: 2em;
+}
+.mainNav ul.menu {
+  display: block;
+  margin-right: 3em;
+  float: right;
+}
+.mainNav ul.menu li {
+  display: inline-block;
+  padding: 0 10px;
+  text-align: right;
+}
+.mainNav ul.menu li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.landing {
+  height: 80vh;
+  background: url(../img/placeimg_640_480_people.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+.landingimg--overlay {
+    background: rgba(0,0,0,.3);
+    height: 80vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    transition: opacity .5s;
+}
+.landing .callToAction {
+  width: 50%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-left: -25%;
+  text-align: center;
+}
+.landing .callToAction .title {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 0;
+  color: #ffffff;
+  letter-spacing: .1em;
+}
+.landing .callToAction p:last-of-type {
+  margin-bottom: 10%;
+  color: #ffffff;
+  font-style: italic;
+  letter-spacing: .05em;
+}
+
+.blogPosts {
+  width: 100%;
+  margin-top: 5%;
+}
+.blogPosts .featuredPosts {
+  width: 28%;
+  display: inline-block;
+  padding: 2% 2% 0 2%;
+}
+.blogPosts .featuredPosts img {
+  width: 100%;
+}
+.blogPosts .ctaBar a {
+  background: #00B9B9;
+  height: 50px;
+  margin-top: 5%;
+  width: 100vw;
+  display: block;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+
+.destinationMap {
+  background: url(http://placehold.it/900x200) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+  margin-top: 0;
+}
+.destinationMap .blurb {
+  display: inline-block;
+  width: 12em;
+  margin: 20% 0 10% 15%;
+  padding: 5%;
+  text-align: center;
+  background: #ffffff;
+}
+
+.bio {
+  background: url(http://placehold.it/900x200/dadada) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+}
+.bio .aboutme {
+  display: inline-block;
+  width: 30%;
+  margin: 10% 0 10% 50%;
+  padding: 5%;
+  text-align: center;
+  background: #ffffff;
+}
