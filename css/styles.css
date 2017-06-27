@@ -144,25 +144,75 @@ a.secondaryCTA:hover {
 }
 .blogPosts .featuredPosts {
   width: 33%;
+  margin: 0;
   display: inline-block;
-  padding: 0% 0% 0 0%;
+  padding:0;
   vertical-align: top;
 }
 
 .imageContainer_4to3 {
-  width: 100%;
+  width: 101%;
+  height: 20em;
   display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageContainer_4to3 h3 {
+  width: 80%;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin-left: -40%;
+  font-size: 1.75em;
+  text-transform: uppercase;
+}
+
+.blogPosts .imageContainer_4to3 img {
+    position:absolute;
+    z-index:-1;
+    top:0%;
+    left:50%;
+    margin-left: -50%;
+    width: 110%;
+    height: auto;
+}
+
+.galleryimg--overlay {
+    background: rgba(0,0,0,.3);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    transition: opacity .5s;
 }
 
 .copyContainer {
-  width: 80%;
+  width: 100%;
+  height: 100%;
   display: block;
   margin: 0 auto;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  margin-left: -50%;
+  display:none;
+  transition: all .5s ease;
+  background: rgba(0,0,0,.9);
+  color :#ffffff;
 }
-.blogPosts .imageContainer_4to3 img {
-  width: 110%;
-  overflow: hidden;
+
+.copyContainer p {
+  width: 80%;
+  padding-top: 10%;
+  display: block;
+  margin:0 auto;
 }
+
 .blogPosts .ctaBar a {
   background: #00B9B9;
   height: 50px;
