@@ -215,7 +215,7 @@ a.secondaryCTA:hover {
 }
 
 .blogPosts .ctaBar a {
-  background: #6B7A8F;
+  background: #F7882F;
   height: 40px;
   margin: 0;
   width: 100vw;
@@ -267,6 +267,7 @@ a.secondaryCTA:hover {
   -o-background-size: cover;
   background-size: cover;
   display: block;
+  margin-top: 3em;
 }
 .bio .aboutme {
   display: inline-block;
@@ -321,3 +322,109 @@ a.secondaryCTA:hover {
 .instagram .image:hover .caption {
   display: block;
 }
+
+
+/*--------------*/
+/*===== TABSET =====*/
+.tabset {
+  display: flex;
+  height: 25em;
+  
+}
+
+.tabset input[type="radio"]:checked + .tab-label {
+  border: none;
+}
+
+.tabset .tab-label {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: solid 1px;
+  transition: all .5s ease;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  padding: 0;
+}
+
+.tabset .tab-label div {
+  display: block;
+  height: 50px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.tabset .tab-label:last-of-type {
+  border-bottom: none;
+}
+
+.tabset .tab-label:hover {
+  background: #6B7A8F;
+}
+
+.tab-content {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  flex: 1;
+  overflow: auto;
+}
+
+.tab-content ul {
+  list-style: none;
+  font-size: .7em;
+
+}
+.tab-content p {
+  font-size: .7em;
+line-height: 1.5em;
+}
+
+.tab-content ul li {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+.tab-content,
+.tabset input[type="radio"] {
+  display: none;
+}
+
+.tabset input[type="radio"]:checked + * + .tab-content {
+  display: block;
+}
+
+.tabset label {
+  font-size: 2rem;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.tab-content {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+/*===== COLORS =====*/
+.tabset {
+  background: #DCC7AA;
+  color: #fff;
+  border-color: #555;
+}
+
+.tabset input[type="radio"]:checked + .tab-label {
+  background: #6B7A8F;
+}
+
+.tabset .tab-label {
+  background: #DCC7AA;
+  border-right-color: #333;
+}
+
+.tab-content {
+  background: #78879e;
+}
+
